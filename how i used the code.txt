@@ -1,0 +1,58 @@
+1) I broke up the website mosttly into divs, with multiple divd inside, 
+and each level of the website is a flex going horizontal, with an h1 starting
+each new section
+
+2)I applied images onto each of the smallest divs, and had them display as blocks
+so that the content would be vertical, and then had a link underneath, acting as a headline
+
+3) I applied to each link 2 nearly identical style rules, 
+the rule for a:hover is just a different color so that the user will realize
+that its a link
+
+4)I applied an identical id to every photo and div in the lower part of the website
+so that i could apply style rules to them that would be universal only within that 
+part of the website
+
+5) for the "daily specials" there are two classes, one for when 
+its closed, and one for when it's toggled, and the js has an event listener
+that when it hears a click will toggle to the other class
+
+6)A similar idea was used for the collapsable nav, two classes were created, one off them
+was the toggle class, and when the event listener hears the click, it changes the class, and i reverse engineered
+it a little by removing the active class, so that it would start in the collapsed position. the
+toggle function also had a style rule that rotates 360 degrees across the
+x-axis
+
+7) the clock has needles created by creating a div class that is very thin but tall, and has a b
+border radius at the two top corners, and had a rotate transform origin at the bottom center, and it
+will translate -50% on the x-axis, and -100% on the y, and the 
+rotate starts at 0. the js involves making a few arrays with psooble
+days of the week, and the months. and then a function that sets
+the variable time to the date, and the methods, getting the day month etc. with 
+the time."" method. Then there we call the element, say
+the hour needle, then there is a function called scale overflow, that accepts parameters
+for the maximum and minimus hours, minutes, and seconds. Then we have another funtion, which takes the p
+parameters puts them into "scale" gets the data and apllies it to the transform
+of the css. and then there is a set interval function, which gets the data from
+the constant "time" and apllies the data. 
+
+8)The digital time gets the data
+from the function earlie that got the data from time."", and has an a ternary operator, that 
+checks of the minutes are less that ten and will add a zero if it is to get 12:05 
+for example. The months and days, take the index from the time."" system and traverse the array based on that number
+
+9)the counter js has a for each operator that edits the innerText and starts
+it at zero, then a function gets the attribute data-target from
+the html. Then we created an increment constant that takes the target and divides it by 
+200, and an if statement keeps it from passing the actual target, and
+a math.ceil method rounds it. then a setTimeout method set to a milisecond, makes it pause a little in between 
+adding the increments
+
+10)I played around with the origional css, and i converted the nav trasition
+from y to x, as well as changed the display to a block to make it vertical, i changed the 
+border radius on the arrows to make them pointy. I as well, 
+created a news list next to the headline, full of related "links", and i created
+a style rule for every link that removed the underline giving it a proffesional appearance
+
+
+ 
